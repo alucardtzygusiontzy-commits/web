@@ -1,0 +1,130 @@
+
+:root {
+    --primary-color: #f7b32b; 
+    --secondary-color: #ffffff; 
+    --card-bg: rgba(0, 0, 0, 0.5); 
+    --font-heading: 'Georgia', serif;
+    --font-body: 'Arial', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: var(--font-body);
+    color: var(--secondary-color);
+    line-height: 1.6;
+    min-height: 100vh;
+    
+  
+    background: url('clouds.jpg') no-repeat center center fixed; 
+    background-size: cover;
+    
+  
+    background-color: rgba(0, 0, 0, 0.6); 
+    background-blend-mode: darken;
+}
+
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px 20px 50px;
+}
+
+.hero-content h1 {
+    font-family: 'Brush Script MT', cursive; 
+    font-size: 5rem;
+    color: var(--primary-color);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    margin-bottom: 0.5rem;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: var(--secondary-color);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+}
+
+
+.reflection-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 4rem 2rem;
+    flex-wrap: wrap; 
+}
+
+.reflection-card {
+    background: var(--card-bg);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 2.5rem;
+    width: 30%;
+    min-width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px); 
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.reflection-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--primary-color);
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.card-icon {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.reflection-card h2 {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.reflection-card p {
+    font-size: 1rem;
+    text-align: left;
+}
+
+
+.footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+    
+    .reflection-container {
+        padding: 2rem 1rem;
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .reflection-card {
+        width: 90%; 
+        margin-bottom: 20px;
+    }
+}

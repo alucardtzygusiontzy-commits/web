@@ -1,0 +1,97 @@
+ body {
+        margin: 0;
+        font-family: "Times New Roman", serif;
+        background: url('xmas.jpg') no-repeat center/cover;
+        background-attachment: fixed;
+        color: white;
+    }
+
+
+    .top-header {
+        background-color: #0c3c1f;
+        padding: 20px;
+        text-align: center;
+        border-bottom: 5px solid #5b0000;
+    }
+
+    .top-header img {
+        height: 60px;
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+
+    .top-header span {
+        font-size: 28px;
+        font-weight: bold;
+        color: white;
+        letter-spacing: 2px;
+    }
+
+
+    .navbar {
+        display: flex;
+        justify-content: center;
+        background: #eac44d;
+        padding: 12px 0;
+        font-size: 18px;
+    }
+
+    .navbar a {
+        color: black;
+        padding: 12px 25px;
+        text-decoration: none;
+        font-weight: bold;
+        position: relative;
+    }
+
+    .navbar a:hover {
+        background: #f4d76b;
+    }
+
+
+    .balls-section {
+        margin-top: 80px;
+        display: flex;
+        justify-content: center;
+        gap: 80px;
+        padding-bottom: 80px;
+    }
+
+    .ball {
+        width: 180px;
+        height: 180px;
+        background: radial-gradient(circle at 30% 30%, #ff6262, #8b0000);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        color: gold;
+        border: 4px solid gold;
+        box-shadow: 0 0 20px gold;
+        transition: 0.4s ease;
+        cursor: pointer;
+        position: relative;
+    }
+
+    
+    .ball::before {
+        content: "";
+        width: 45px;
+        height: 25px;
+        background: gold;
+        border-radius: 5px 5px 0 0;
+        position: absolute;
+        top: -25px;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 2px solid #d4a017;
+    }
+
+ 
+    .ball:hover {
+        transform: scale(1.13) rotate(5deg);
+        box-shadow: 0 0 35px 15px gold;
+    }

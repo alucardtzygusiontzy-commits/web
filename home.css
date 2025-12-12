@@ -1,0 +1,102 @@
+body {      background-image: url("xmas9.jpg");
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+            
+            color: wheat;
+        }
+
+        header {
+            background: gray;
+            backdrop-filter: blur(10px);
+            padding: 20px 20px;
+            position: sticky;
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ff6f61;
+        }
+
+        .hero {
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+            animation: slideIn 1.2s ease;
+        }
+
+        @keyframes slideIn {
+            0% { opacity: 0; transform: translateY(40px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        .hero p {
+            max-width: 600px;
+            font-size: 1.2rem;
+            opacity: 0.85;
+        }
+
+        .btn {
+            margin-top: 20px;
+            padding: 12px 30px;
+            border: none;
+            background: #ff6f61;
+            color: white;
+            border-radius: 30px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: lightcoral;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 50px;
+        }
+
+        .card {
+            background: black;
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(255,255,255,0.5);
+            backdrop-filter: blur(8px);
+            margin-top: 40px;
+        }

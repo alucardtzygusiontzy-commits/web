@@ -1,0 +1,75 @@
+body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://example.com/advocacy-background.jpg'); /* Replace with a suitable background image URL, e.g., something related to digital ethics or kindness */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            text-align: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        .hero {
+            padding: 100px 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        h1 {
+            font-size: 4em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            background: linear-gradient(45deg, #00d4ff, #090979);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        h2 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+            font-style: italic;
+        }
+        .content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            animation: slideUp 1.5s ease-out;
+        }
+        p {
+            font-size: 1.3em;
+            line-height: 1.8;
+            margin-bottom: 40px;
+            text-align: justify;
+        }
+        .images {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+        .images img {
+            width: 100%;
+            max-width: 250px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .images img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
